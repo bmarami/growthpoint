@@ -749,10 +749,6 @@ div.output_unrecognized a:hover {
 }
 
 
-
-
-
-
 .rendered_html h1:first-child {
   margin-top: 0.538em;
 }
@@ -1011,7 +1007,7 @@ h6:hover .anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Introduction">Introduction<a class="anchor-link" href="#Introduction">¶</a></h1><p>Thanks for visiting my blog. This post is a brief explanations of a project I worked on during my fellowship at <a href="http://insightdatascience.com/">Insight Data Science</a>. Insight is a program that helps academics who are seeking industrial opportunities, like me, to prepare and find data science job.</p>
+<h1 id="Introduction">Introduction<a class="anchor-link" href="#Introduction">¶</a></h1><p>Thanks for visiting my blog. This post is a brief explanations of a project I worked on during my fellowship at <a href="http://insightdatascience.com/">Insight Data Science</a>. Insight is a program that helps academics who are seeking industrial opportunities, like me, to prepare and find a data science job.</p>
 </div>
 </div>
 </div>
@@ -1020,7 +1016,7 @@ h6:hover .anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Motivation">Motivation<a class="anchor-link" href="#Motivation">¶</a></h1><p>I worked on a consultant project with a Canadian company called <a href="http://piinpoint.com/">PiinPoint</a>. PiinPoint is a site selection platform that helps business owners discover, compare, and validate locations for expansion. For this purpose, they use information such as demographics, traffic counts and available commercial real estate to identify best locations for businesses to expand or relocate. However, these data are mostly obtained by surveys, are noisy and unreliable. Specially, these information do not show customers behavior and where they money being spent. 
+<h1 id="Motivation">Motivation<a class="anchor-link" href="#Motivation">¶</a></h1><p>I worked on a consultant project with a Canadian company called <a href="http://piinpoint.com/">PiinPoint</a>. PiinPoint is a site selection platform that helps business owners discover, compare, and validate locations for expansion. For this purpose, they use information such as demographics, traffic counts and available commercial real estate to identify best locations for businesses to expand or relocate. However, these data that are mostly obtained by surveys are noisy and unreliable. Additionally, these information do not provide good insight into customers behavior and where their money is being spent. 
 Recently, PiinPoint acquired credit card transactions history in retail stores and restaurants from a major credit card company. Before integrating these data in their business model, they asked me to analyze the data and answer two major questions:</p>
 <ol>
 <li>How have the restaurant and retail businesses changed over the past four years in Las Vegas?</li>
@@ -1034,8 +1030,8 @@ Recently, PiinPoint acquired credit card transactions history in retail stores a
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Credit-Card-Data">Credit Card Data<a class="anchor-link" href="#Credit-Card-Data">¶</a></h1><p>The credit-card company provides five component scores, namely: Sales, transactions, ticket size, growth and stability, which are scaled between 0 and 1000 for every census block. These information are separately provided for retail stores, restaurants, and all transactions within the bock. These scores provide insights into a range of revenue performances.  The component scores are then blended to create one composite upfront score, which enables comparison of locations for retail stores and restaurant. The higher the upfront score, the higher the value of the location.</p>
-<p>The credit card transactions history within the 575 census blocks in the city of Las Vegas was provided by <a href="http://piinpoint.com/">PiinPoint</a>. The data included separate set of component scores for restaurants, retail stores and all places from January 2012 to April 2016.</p>
+<h1 id="Credit-Card-Data">Credit Card Data<a class="anchor-link" href="#Credit-Card-Data">¶</a></h1><p>The credit-card company provides five component scores, namely: Sales, transactions, ticket size, growth and stability, which are scaled between 0 and 1000 for every census block. These information are provided for retail stores, restaurants, and all transactions within the block. These scores provide insights into a range of revenue performances.  The component scores are then blended to create one composite upfront score, which enables comparison of locations for retail stores and restaurant. The higher the upfront score, the higher the value of the location.</p>
+<p>The credit card transactions history within the 575 census blocks in the city of Las Vegas was provided by <a href="http://piinpoint.com/">PiinPoint</a>. The data included separate sets of component scores for restaurants, retail stores and all places from January 2012 to April 2016.</p>
 </div>
 </div>
 </div>
@@ -1044,7 +1040,7 @@ Recently, PiinPoint acquired credit card transactions history in retail stores a
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Deliverable-1">Deliverable 1<a class="anchor-link" href="#Deliverable-1">¶</a></h1><p>To visualize and understand the credit card data better, and answer question 1, I created an interactive tool using Tableau and QGIS to map credit card data to every census block and show the six component scores over time. As is shown in the following video, using this tool the map can be change to restaurants (eating_places), retail stores (non_eating_places) and all places (all). Also, using the sliding bar, component scores can be shown for different times (monthly) from January 2012 to April 2016. This tool makes it possible to investigate credit card data and compare the component scores for neighboring blocks throughout the city.</p>
+<h1 id="Deliverable-1">Deliverable 1<a class="anchor-link" href="#Deliverable-1">¶</a></h1><p>To visualize and understand the credit card data better, and answer question 1, I created an interactive tool using Tableau and QGIS to map credit card data to every census block and show the six component scores over time. As is shown in the following video, using this tool the map can be changed to restaurants (eating_places), retail stores (non_eating_places) and all places (all). Also, using the sliding bar, component scores can be shown for different times (monthly) from January 2012 to April 2016. This tool makes it possible to investigate credit card data and compare the component scores for neighboring blocks throughout the city.</p>
 </div>
 </div>
 </div>
@@ -1098,7 +1094,7 @@ Recently, PiinPoint acquired credit card transactions history in retail stores a
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Deliverable-2">Deliverable 2<a class="anchor-link" href="#Deliverable-2">¶</a></h1><p>To Answer question 2, I created a prediction model to predict upfront score for the future. I used Sales, Transactions, ticket size, growth and stability score from the current month, last month and last year (12 month seasonality) to predict the upfront score in the upcoming months (1-12 months).</p>
+<h1 id="Deliverable-2">Deliverable 2<a class="anchor-link" href="#Deliverable-2">¶</a></h1><p>To Answer question 2, I created a prediction model to predict upfront score for the future. I used sales, transactions, ticket size, growth and stability scores from the current month, last month and last year (12 month seasonality) to predict the upfront score in the upcoming months (1-12 months).</p>
 </div>
 </div>
 </div>
@@ -1117,7 +1113,7 @@ Recently, PiinPoint acquired credit card transactions history in retail stores a
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Among several machine learning techniques that I tried for this purpose, linear regression (LR) and gradient boosting regression (GBR) trees performed the best. In the following figures, the R2 score of the prediction of upfront score for the upcoming 12 months are given. As can be seen from these figures, R2 score for one month ahead prediction in LR and GBR are very close. However, LR's prediction performance degrades more than that of GBR as the model predicts the upfront score for farther months.</p>
-<p>The R2 score remains almost constant (about 0.9) in restaurants locations using GBR, while it drops to 0.8 in retail stores. The R2 score in all places (restaurants, retail stores and others) also drops 0.1 after for two or more months ahead prediction.</p>
+<p>The R2 score remains almost constant (about 0.9) in restaurants locations using GBR, while it drops to 0.8 in retail stores. The R2 score in all places (restaurants, retail stores and others) also drops 0.1 for two or more months ahead prediction.</p>
 </div>
 </div>
 </div>
@@ -1171,7 +1167,7 @@ Recently, PiinPoint acquired credit card transactions history in retail stores a
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The relative importance of the input features using GBR varies depending on the number of months the prediction model tries to predict in the future. In the below figure, growth and stabile (from current month, last month and last year) are the most important features for 1 month prediction. While, for 12 month prediction all five component scores from last year are the most important features.</p>
+<p>The relative importance of the input features using GBR varies depending on the number of months the prediction model tries to predict in the future. In the below figure, growth and stability (from current month, last month and last year) are the most important features for 1 month prediction. While, for 12 month prediction all five component scores from last year are the most important features.</p>
 </div>
 </div>
 </div>
@@ -1199,7 +1195,7 @@ Recently, PiinPoint acquired credit card transactions history in retail stores a
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Concluding-Remarks">Concluding Remarks<a class="anchor-link" href="#Concluding-Remarks">¶</a></h1><p>My analysis of the credit-card transactions history provided a good insight about people's spending in the restaurants and retail stores. credit card historical data has a good prediction power for the sales of restaurants and retail stores. I think <a href="http://piinpoint.com/">PiinPoint</a> can incorporate this data in their business model to identify new locations for businesses to expand to relocate their existing stores.</p>
+<h1 id="Concluding-Remarks">Concluding Remarks<a class="anchor-link" href="#Concluding-Remarks">¶</a></h1><p>My analysis of the credit-card transactions history provided a good insight about people's spending in the restaurants and retail stores. Credit card historical data has a good prediction power for the sales of restaurants and retail stores. I think <a href="http://piinpoint.com/">PiinPoint</a> can incorporate this data in their business model to identify new locations for businesses to expand to relocate existing stores.</p>
 <p>I analyzed the data for the city of Las Vegas. Given credit card historical transactions for other cities, the information from blocks in neighboring cities could also be incorporated in the prediction model. Moreover, a similar approach could be used to build a prediction model to analyze customers spending in different cities and states.</p>
 </div>
 </div>
